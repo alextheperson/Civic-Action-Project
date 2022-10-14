@@ -21,7 +21,7 @@ app.get('/data/', (req, res) => {
         }
         if (data != undefined && data != "") {
             data = JSON.parse(data.toString());
-            if (Date.now() - data["metadata"]["updated"] < 60000 || urlParams.get("force-preserve") == "on") {
+            if (Date.now() - data["metadata"]["updated"] < 2592000000 || urlParams.get("force-preserve") == "on") {
                 data["metadata"]["status"] = (urlParams.get("force-preserve") == "on") ? "forced-normal" : "normal";
                 if (urlParams.get("format") == "html") res.send(util.toTable(data));
                 else if (urlParams.get("format") == "json") {
