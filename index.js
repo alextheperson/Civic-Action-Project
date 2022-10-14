@@ -73,9 +73,7 @@ app.get('/data/', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('server started');
-});
+app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
 
 function scrape(index) {
     scraper.scrapeEnrollment(codes.codes[index], 1994, 2022, (newdata) => {
