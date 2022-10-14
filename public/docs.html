@@ -24,13 +24,12 @@
         <button onclick="window.location.href='../'">Home</button>
         <h1>URL Parameters</h1>
         <code>code</code> - (string) This is the "orgcode" of the school district. It is an 8 digit integer.<br>
-        <code>format</code> - ("json", "html", or "csv") This is the format you want the results to be in. It can be
-        "json", "html" or "csv".<br>
+        <code>format</code> - ("json" or "html") This is the format you want the results to be in. It can be
+        "json" or "html"".<br>
         <ul>
             <li>"json": returns the raw JSON from the cach. It includes the years, demographics, and metadata.</li>
             <li>"html": returns an HTML table of values with the rows as years, and the columns as demographics. It also
                 includes the metadata from the cache.</li>
-            <li>"csv": returns a CSV table of values. The rows are years and the columns as demographics.</li>
         </ul>
         <code>year</code> - (string) This sets a specific year to look at. It only applies to JSON format.<br>
         <code>statistic</code> - (string) This sets a specific statistic to look at ("Enrollment by Race/Ethnicity",
