@@ -7,6 +7,8 @@ const util = require('./util.js');
 
 const app = express();
 
+const PORT = process.env.PORT || 8000;
+
 // https://civic-action-project.alextheperson.repl.co/json/?code=04450000&year=2022&statistic=Enrollment%20by%20Race/Ethnicity
 
 app.use(express.static('public'))
