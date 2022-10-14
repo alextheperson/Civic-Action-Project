@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/alexizys/cap
+    - export DEPLOYPATH=/home/alexizys/civic-action-project
     - /bin/cp index.js $DEPLOYPATH
     - /bin/cp school-districts.js $DEPLOYPATH
     - /bin/cp scraper.js $DEPLOYPATH
