@@ -6,7 +6,6 @@ const codes = require('./school-districts.js');
 const util = require('./util.js');
 
 const app = express();
-const passkey = `ocnh#HJn761542!`
 
 // https://civic-action-project.alextheperson.repl.co/json/?code=04450000&year=2022&statistic=Enrollment%20by%20Race/Ethnicity
 
@@ -20,7 +19,7 @@ app.get('/data/', (req, res) => {
         }
         if (data != undefined && data != "") {
             data = JSON.parse(data.toString());
-            if (Date.now() - data["metadata"]["updated"] < 60000 || (urlParams.get("force-update") == "on" && urlParams.get("passkey") == passkey) || urlParams.get("force-preserve") == "on") {
+            if (Date.now() - data["metadata"]["updated"] < 60000 || urlParams.get("force-preserve") == "on") {
                 data["metadata"]["status"] = (urlParams.get("force-preserve") == "on") ? "forced-normal" : "normal";
                 if (urlParams.get("format") == "html") res.send(util.toTable(data));
                 else if (urlParams.get("format") == "json") {
@@ -37,7 +36,7 @@ app.get('/data/', (req, res) => {
             } else {
                 scraper.scrapeEnrollment(urlParams.get("code"), 1994, 2022, (newdata) => {
                     fs.writeFile("cache/" + urlParams.get("code") + ".json", JSON.stringify(newdata), () => { });
-                    newdata["metadata"]["status"] = (urlParams.get("force-update") == "on" && urlParams.get("passkey") == passkey) ? "forced-updated" : "updated";
+                    newdata["metadata"]["status"] = "updated";
                     newdata["metadata"]["updated-from"] = data["metadata"]["updated"];
                     if (urlParams.get("format") == "html") res.send(util.toTable(newdata));
                     else if (urlParams.get("format") == "json") {
