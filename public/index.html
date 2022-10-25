@@ -2,632 +2,632 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>School Diversity Analyzer</title>
-    <link href="//alexsol.is/style.css" rel="stylesheet" type="text/css" />
-    <link href="/style.css" rel="stylesheet" type="text/css" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>School Diversity Analyzer</title>
+	<link href="//alexsol.is/style.css" rel="stylesheet" type="text/css" />
+	<link href="/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <main>
-        <article>
-            <h1>School Diversity Analyzer</h1>
-            <form action="/data" method="get" id="form">
-                <label for="code">District: </label>
-                <select id="code" name="code">
-                    <option value="04450000">Abby Kelley Foster Charter Public (District)</option>
-                    <option value="00010000">Abington</option>
-                    <option value="04120000">Academy Of the Pacific Rim Charter Public (Distric...</option>
-                    <option value="00020000">Acton (non-op)</option>
-                    <option value="06000000">Acton-Boxborough</option>
-                    <option value="00030000">Acushnet</option>
-                    <option value="00040000">Adams (non-op)</option>
-                    <option value="04300000">Advanced Math and Science Academy Charter (Distric...</option>
-                    <option value="00050000">Agawam</option>
-                    <option value="00060000">Alford (non-op)</option>
-                    <option value="04090000">Alma del Mar Charter School (District)</option>
-                    <option value="00070000">Amesbury</option>
-                    <option value="00080000">Amherst</option>
-                    <option value="06050000">Amherst-Pelham</option>
-                    <option value="00090000">Andover</option>
-                    <option value="01040000">Aquinnah (non-op)</option>
-                    <option value="35090000">Argosy Collegiate Charter School (District)</option>
-                    <option value="00100000">Arlington</option>
-                    <option value="00110000">Ashburnham (non-op)</option>
-                    <option value="06100000">Ashburnham-Westminster</option>
-                    <option value="00120000">Ashby (non-op)</option>
-                    <option value="00130000">Ashfield (non-op)</option>
-                    <option value="00140000">Ashland</option>
-                    <option value="08010000">Assabet Valley Regional Vocational Technical</option>
-                    <option value="00150000">Athol (non-op)</option>
-                    <option value="06150000">Athol-Royalston</option>
-                    <option value="04910000">Atlantis Charter (District)</option>
-                    <option value="00160000">Attleboro</option>
-                    <option value="00170000">Auburn</option>
-                    <option value="00180000">Avon</option>
-                    <option value="00190000">Ayer (non-op)</option>
-                    <option value="06160000">Ayer Shirley School District</option>
-                    <option value="00200000">Barnstable</option>
-                    <option value="00210000">Barre (non-op)</option>
-                    <option value="35020000">Baystate Academy Charter Public School (District)</option>
-                    <option value="00220000">Becket (non-op)</option>
-                    <option value="00230000">Bedford</option>
-                    <option value="00240000">Belchertown</option>
-                    <option value="00250000">Bellingham</option>
-                    <option value="00260000">Belmont</option>
-                    <option value="04200000">Benjamin Banneker Charter Public (District)</option>
-                    <option value="04470000">Benjamin Franklin Classical Charter Public (Distri...</option>
-                    <option value="00270000">Berkley</option>
-                    <option value="04140000">Berkshire Arts and Technology Charter Public (Dist...</option>
-                    <option value="06180000">Berkshire Hills</option>
-                    <option value="00280000">Berlin (non-op)</option>
-                    <option value="06200000">Berlin-Boylston</option>
-                    <option value="00290000">Bernardston (non-op)</option>
-                    <option value="00300000">Beverly</option>
-                    <option value="00310000">Billerica</option>
-                    <option value="00320000">Blackstone (non-op)</option>
-                    <option value="08050000">Blackstone Valley Regional Vocational Technical</option>
-                    <option value="06220000">Blackstone-Millville</option>
-                    <option value="00330000">Blandford (non-op)</option>
-                    <option value="08060000">Blue Hills Regional Vocational Technical</option>
-                    <option value="00340000">Bolton (non-op)</option>
-                    <option value="00350000">Boston</option>
-                    <option value="04490000">Boston Collegiate Charter (District)</option>
-                    <option value="04240000">Boston Day and Evening Academy Charter (District)</option>
-                    <option value="04110000">Boston Green Academy Horace Mann Charter School (D...</option>
-                    <option value="04160000">Boston Preparatory Charter Public (District)</option>
-                    <option value="04810000">Boston Renaissance Charter Public (District)</option>
-                    <option value="00360000">Bourne</option>
-                    <option value="00370000">Boxborough (non-op)</option>
-                    <option value="00380000">Boxford</option>
-                    <option value="00390000">Boylston (non-op)</option>
-                    <option value="00400000">Braintree</option>
-                    <option value="00410000">Brewster</option>
-                    <option value="04170000">Bridge Boston Charter School (District)</option>
-                    <option value="00420000">Bridgewater (non-op)</option>
-                    <option value="06250000">Bridgewater-Raynham</option>
-                    <option value="00430000">Brimfield</option>
-                    <option value="09100000">Bristol County Agricultural</option>
-                    <option value="08100000">Bristol-Plymouth Regional Vocational Technical</option>
-                    <option value="00440000">Brockton</option>
-                    <option value="04280000">Brooke Charter School (District)</option>
-                    <option value="00450000">Brookfield</option>
-                    <option value="00460000">Brookline</option>
-                    <option value="00470000">Buckland (non-op)</option>
-                    <option value="00480000">Burlington</option>
-                    <option value="00490000">Cambridge</option>
-                    <option value="00500000">Canton</option>
-                    <option value="04320000">Cape Cod Lighthouse Charter (District)</option>
-                    <option value="08150000">Cape Cod Regional Vocational Technical</option>
-                    <option value="00510000">Carlisle</option>
-                    <option value="00520000">Carver</option>
-                    <option value="06350000">Central Berkshire</option>
-                    <option value="00530000">Charlemont (non-op)</option>
-                    <option value="00540000">Charlton (non-op)</option>
-                    <option value="00550000">Chatham (non-op)</option>
-                    <option value="00560000">Chelmsford</option>
-                    <option value="00570000">Chelsea</option>
-                    <option value="00580000">Cheshire (non-op)</option>
-                    <option value="00590000">Chester (non-op)</option>
-                    <option value="00600000">Chesterfield (non-op)</option>
-                    <option value="06320000">Chesterfield-Goshen</option>
-                    <option value="00610000">Chicopee</option>
-                    <option value="00620000">Chilmark (non-op)</option>
-                    <option value="04180000">Christa McAuliffe Charter Public (District)</option>
-                    <option value="04370000">City on a Hill Charter Public School (District)</option>
-                    <option value="00630000">Clarksburg</option>
-                    <option value="00640000">Clinton</option>
-                    <option value="04380000">Codman Academy Charter Public (District)</option>
-                    <option value="00650000">Cohasset</option>
-                    <option value="35030000">Collegiate Charter School of Lowell (District)</option>
-                    <option value="00660000">Colrain (non-op)</option>
-                    <option value="04360000">Community Charter School of Cambridge (District)</option>
-                    <option value="04260000">Community Day Charter Public School - Gateway (Dis...</option>
-                    <option value="04400000">Community Day Charter Public School - Prospect (Di...</option>
-                    <option value="04310000">Community Day Charter Public School - R. Kingman W...</option>
-                    <option value="00670000">Concord</option>
-                    <option value="06400000">Concord-Carlisle</option>
-                    <option value="04390000">Conservatory Lab Charter (District)</option>
-                    <option value="00680000">Conway</option>
-                    <option value="00690000">Cummington (non-op)</option>
-                    <option value="00700000">Dalton (non-op)</option>
-                    <option value="00710000">Danvers</option>
-                    <option value="00720000">Dartmouth</option>
-                    <option value="00730000">Dedham</option>
-                    <option value="00740000">Deerfield</option>
-                    <option value="00750000">Dennis (non-op)</option>
-                    <option value="06450000">Dennis-Yarmouth</option>
-                    <option value="03520000">Devens (non-op)</option>
-                    <option value="00760000">Dighton (non-op)</option>
-                    <option value="06500000">Dighton-Rehoboth</option>
-                    <option value="00770000">Douglas</option>
-                    <option value="00780000">Dover</option>
-                    <option value="06550000">Dover-Sherborn</option>
-                    <option value="00790000">Dracut</option>
-                    <option value="00800000">Dudley (non-op)</option>
-                    <option value="04070000">Dudley Street Neighborhood Charter School (Distric...</option>
-                    <option value="06580000">Dudley-Charlton Reg</option>
-                    <option value="00810000">Dunstable (non-op)</option>
-                    <option value="00820000">Duxbury</option>
-                    <option value="00830000">East Bridgewater</option>
-                    <option value="00840000">East Brookfield (non-op)</option>
-                    <option value="00870000">East Longmeadow</option>
-                    <option value="00850000">Eastham</option>
-                    <option value="00860000">Easthampton</option>
-                    <option value="00880000">Easton</option>
-                    <option value="00890000">Edgartown</option>
-                    <option value="04520000">Edward M. Kennedy Academy for Health Careers (Hora...</option>
-                    <option value="00900000">Egremont (non-op)</option>
-                    <option value="00910000">Erving</option>
-                    <option value="00920000">Essex (non-op)</option>
-                    <option value="08170000">Essex North Shore Agricultural and Technical Schoo...</option>
-                    <option value="00930000">Everett</option>
-                    <option value="04100000">Excel Academy Charter (District)</option>
-                    <option value="00940000">Fairhaven</option>
-                    <option value="00950000">Fall River</option>
-                    <option value="00960000">Falmouth</option>
-                    <option value="06620000">Farmington River Reg</option>
-                    <option value="00970000">Fitchburg</option>
-                    <option value="00980000">Florida</option>
-                    <option value="04130000">Four Rivers Charter Public (District)</option>
-                    <option value="00990000">Foxborough</option>
-                    <option value="04460000">Foxborough Regional Charter (District)</option>
-                    <option value="01000000">Framingham</option>
-                    <option value="04780000">Francis W. Parker Charter Essential (District)</option>
-                    <option value="01010000">Franklin</option>
-                    <option value="08180000">Franklin County Regional Vocational Technical</option>
-                    <option value="01020000">Freetown (non-op)</option>
-                    <option value="06650000">Freetown-Lakeville</option>
-                    <option value="06700000">Frontier</option>
-                    <option value="01030000">Gardner</option>
-                    <option value="06720000">Gateway</option>
-                    <option value="01050000">Georgetown</option>
-                    <option value="01060000">Gill (non-op)</option>
-                    <option value="06740000">Gill-Montague</option>
-                    <option value="04960000">Global Learning Charter Public (District)</option>
-                    <option value="01070000">Gloucester</option>
-                    <option value="01080000">Goshen (non-op)</option>
-                    <option value="01090000">Gosnold</option>
-                    <option value="01100000">Grafton</option>
-                    <option value="01110000">Granby</option>
-                    <option value="01120000">Granville (non-op)</option>
-                    <option value="01130000">Great Barrington (non-op)</option>
-                    <option value="39010000">Greater Commonwealth Virtual District</option>
-                    <option value="08210000">Greater Fall River Regional Vocational Technical</option>
-                    <option value="08230000">Greater Lawrence Regional Vocational Technical</option>
-                    <option value="08280000">Greater Lowell Regional Vocational Technical</option>
-                    <option value="08250000">Greater New Bedford Regional Vocational Technical</option>
-                    <option value="01140000">Greenfield</option>
-                    <option value="01150000">Groton (non-op)</option>
-                    <option value="06730000">Groton-Dunstable</option>
-                    <option value="01160000">Groveland (non-op)</option>
-                    <option value="01170000">Hadley</option>
-                    <option value="01180000">Halifax</option>
-                    <option value="01190000">Hamilton (non-op)</option>
-                    <option value="06750000">Hamilton-Wenham</option>
-                    <option value="01200000">Hampden (non-op)</option>
-                    <option value="04990000">Hampden Charter School of Science East (District)</option>
-                    <option value="35160000">Hampden Charter School of Science West (District)</option>
-                    <option value="06800000">Hampden-Wilbraham</option>
-                    <option value="06830000">Hampshire</option>
-                    <option value="01210000">Hancock</option>
-                    <option value="01220000">Hanover</option>
-                    <option value="01230000">Hanson (non-op)</option>
-                    <option value="01240000">Hardwick (non-op)</option>
-                    <option value="01250000">Harvard</option>
-                    <option value="01260000">Harwich (non-op)</option>
-                    <option value="01270000">Hatfield</option>
-                    <option value="01280000">Haverhill</option>
-                    <option value="06850000">Hawlemont</option>
-                    <option value="01290000">Hawley (non-op)</option>
-                    <option value="01300000">Heath (non-op)</option>
-                    <option value="04190000">Helen Y. Davis Leadership Academy Charter Public (...</option>
-                    <option value="04550000">Hill View Montessori Charter Public (District)</option>
-                    <option value="04500000">Hilltown Cooperative Charter Public (District)</option>
-                    <option value="01310000">Hingham</option>
-                    <option value="01320000">Hinsdale (non-op)</option>
-                    <option value="01330000">Holbrook</option>
-                    <option value="01340000">Holden (non-op)</option>
-                    <option value="01350000">Holland</option>
-                    <option value="01360000">Holliston</option>
-                    <option value="01370000">Holyoke</option>
-                    <option value="04530000">Holyoke Community Charter (District)</option>
-                    <option value="06030000">Hoosac Valley Regional</option>
-                    <option value="01380000">Hopedale</option>
-                    <option value="01390000">Hopkinton</option>
-                    <option value="01400000">Hubbardston (non-op)</option>
-                    <option value="01410000">Hudson</option>
-                    <option value="01420000">Hull</option>
-                    <option value="01430000">Huntington (non-op)</option>
-                    <option value="04350000">Innovation Academy Charter (District)</option>
-                    <option value="03700000">Institutional Schools</option>
-                    <option value="01440000">Ipswich</option>
-                    <option value="04630000">KIPP Academy Boston Charter School (District)</option>
-                    <option value="04290000">KIPP Academy Lynn Charter (District)</option>
-                    <option value="06900000">King Philip</option>
-                    <option value="01450000">Kingston</option>
-                    <option value="01460000">Lakeville (non-op)</option>
-                    <option value="01470000">Lancaster (non-op)</option>
-                    <option value="01480000">Lanesborough (non-op)</option>
-                    <option value="01490000">Lawrence</option>
-                    <option value="04540000">Lawrence Family Development Charter (District)</option>
-                    <option value="04860000">Learning First Charter Public School (District)</option>
-                    <option value="01500000">Lee</option>
-                    <option value="01510000">Leicester</option>
-                    <option value="01520000">Lenox</option>
-                    <option value="01530000">Leominster</option>
-                    <option value="01540000">Leverett</option>
-                    <option value="01550000">Lexington</option>
-                    <option value="01560000">Leyden (non-op)</option>
-                    <option value="35140000">Libertas Academy Charter School (District)</option>
-                    <option value="01570000">Lincoln</option>
-                    <option value="06950000">Lincoln-Sudbury</option>
-                    <option value="01580000">Littleton</option>
-                    <option value="01590000">Longmeadow</option>
-                    <option value="01600000">Lowell</option>
-                    <option value="04560000">Lowell Community Charter Public (District)</option>
-                    <option value="04580000">Lowell Middlesex Academy Charter (District)</option>
-                    <option value="01610000">Ludlow</option>
-                    <option value="01620000">Lunenburg</option>
-                    <option value="01630000">Lynn</option>
-                    <option value="01640000">Lynnfield</option>
-                    <option value="04690000">MATCH Charter Public School (District)</option>
-                    <option value="04680000">Ma Academy for Math and Science</option>
-                    <option value="01650000">Malden</option>
-                    <option value="01660000">Manchester (non-op)</option>
-                    <option value="06980000">Manchester Essex Regional</option>
-                    <option value="01670000">Mansfield</option>
-                    <option value="35170000">Map Academy Charter School (District)</option>
-                    <option value="01680000">Marblehead</option>
-                    <option value="04640000">Marblehead Community Charter Public (District)</option>
-                    <option value="01690000">Marion</option>
-                    <option value="01700000">Marlborough</option>
-                    <option value="01710000">Marshfield</option>
-                    <option value="07000000">Martha's Vineyard</option>
-                    <option value="04660000">Martha's Vineyard Charter (District)</option>
-                    <option value="04920000">Martin Luther King Jr. Charter School of Excellenc...</option>
-                    <option value="07050000">Masconomet</option>
-                    <option value="01720000">Mashpee</option>
-                    <option value="01730000">Mattapoisett</option>
-                    <option value="01740000">Maynard</option>
-                    <option value="01750000">Medfield</option>
-                    <option value="01760000">Medford</option>
-                    <option value="01770000">Medway</option>
-                    <option value="01780000">Melrose</option>
-                    <option value="01790000">Mendon (non-op)</option>
-                    <option value="07100000">Mendon-Upton</option>
-                    <option value="01800000">Merrimac (non-op)</option>
-                    <option value="01810000">Methuen</option>
-                    <option value="01820000">Middleborough</option>
-                    <option value="01830000">Middlefield (non-op)</option>
-                    <option value="01840000">Middleton</option>
-                    <option value="01850000">Milford</option>
-                    <option value="01860000">Millbury</option>
-                    <option value="01870000">Millis</option>
-                    <option value="01880000">Millville (non-op)</option>
-                    <option value="01890000">Milton</option>
-                    <option value="08300000">Minuteman Regional Vocational Technical</option>
-                    <option value="07170000">Mohawk Trail</option>
-                    <option value="07120000">Monomoy Regional School District</option>
-                    <option value="01900000">Monroe (non-op)</option>
-                    <option value="01910000">Monson</option>
-                    <option value="08320000">Montachusett Regional Vocational Technical</option>
-                    <option value="01920000">Montague (non-op)</option>
-                    <option value="01930000">Monterey (non-op)</option>
-                    <option value="01940000">Montgomery (non-op)</option>
-                    <option value="07150000">Mount Greylock</option>
-                    <option value="01950000">Mount Washington (non-op)</option>
-                    <option value="04700000">Mystic Valley Regional Charter (District)</option>
-                    <option value="01960000">Nahant</option>
-                    <option value="01970000">Nantucket</option>
-                    <option value="07200000">Narragansett</option>
-                    <option value="07250000">Nashoba</option>
-                    <option value="08520000">Nashoba Valley Regional Vocational Technical</option>
-                    <option value="01980000">Natick</option>
-                    <option value="06600000">Nauset</option>
-                    <option value="01990000">Needham</option>
-                    <option value="04440000">Neighborhood House Charter (District)</option>
-                    <option value="02000000">New Ashford (non-op)</option>
-                    <option value="02010000">New Bedford</option>
-                    <option value="02020000">New Braintree (non-op)</option>
-                    <option value="35130000">New Heights Charter School of Brockton (District)</option>
-                    <option value="02050000">New Marlborough (non-op)</option>
-                    <option value="02060000">New Salem (non-op)</option>
-                    <option value="07280000">New Salem-Wendell</option>
-                    <option value="02030000">Newbury (non-op)</option>
-                    <option value="02040000">Newburyport</option>
-                    <option value="02070000">Newton</option>
-                    <option value="02080000">Norfolk</option>
-                    <option value="09150000">Norfolk County Agricultural</option>
-                    <option value="02090000">North Adams</option>
-                    <option value="02110000">North Andover</option>
-                    <option value="02120000">North Attleborough</option>
-                    <option value="02150000">North Brookfield</option>
-                    <option value="07350000">North Middlesex</option>
-                    <option value="02170000">North Reading</option>
-                    <option value="02100000">Northampton</option>
-                    <option value="04060000">Northampton-Smith Vocational Agricultural</option>
-                    <option value="07300000">Northboro-Southboro</option>
-                    <option value="02130000">Northborough</option>
-                    <option value="02140000">Northbridge</option>
-                    <option value="08530000">Northeast Metropolitan Regional Vocational Technic...</option>
-                    <option value="08510000">Northern Berkshire Regional Vocational Technical</option>
-                    <option value="02160000">Northfield (non-op)</option>
-                    <option value="02180000">Norton</option>
-                    <option value="02190000">Norwell</option>
-                    <option value="02200000">Norwood</option>
-                    <option value="02210000">Oak Bluffs</option>
-                    <option value="02220000">Oakham (non-op)</option>
-                    <option value="08550000">Old Colony Regional Vocational Technical</option>
-                    <option value="07400000">Old Rochester</option>
-                    <option value="35150000">Old Sturbridge Academy Charter Public School (Dist...</option>
-                    <option value="02230000">Orange</option>
-                    <option value="02240000">Orleans</option>
-                    <option value="02250000">Otis (non-op)</option>
-                    <option value="02260000">Oxford</option>
-                    <option value="02270000">Palmer</option>
-                    <option value="08600000">Pathfinder Regional Vocational Technical</option>
-                    <option value="35010000">Paulo Freire Social Justice Charter School (Distri...</option>
-                    <option value="02280000">Paxton (non-op)</option>
-                    <option value="02290000">Peabody</option>
-                    <option value="02300000">Pelham</option>
-                    <option value="02310000">Pembroke</option>
-                    <option value="07450000">Pentucket</option>
-                    <option value="02320000">Pepperell (non-op)</option>
-                    <option value="02330000">Peru (non-op)</option>
-                    <option value="02340000">Petersham</option>
-                    <option value="02350000">Phillipston (non-op)</option>
-                    <option value="35180000">Phoenix Academy Public Charter High School Lawrenc...</option>
-                    <option value="35080000">Phoenix Academy Public Charter High School Springf...</option>
-                    <option value="04930000">Phoenix Charter Academy (District)</option>
-                    <option value="04940000">Pioneer Charter School of Science (District)</option>
-                    <option value="35060000">Pioneer Charter School of Science II (PCSS-II) (Di...</option>
-                    <option value="07500000">Pioneer Valley</option>
-                    <option value="04970000">Pioneer Valley Chinese Immersion Charter (District...</option>
-                    <option value="04790000">Pioneer Valley Performing Arts Charter Public (Dis...</option>
-                    <option value="02360000">Pittsfield</option>
-                    <option value="02370000">Plainfield (non-op)</option>
-                    <option value="02380000">Plainville</option>
-                    <option value="02390000">Plymouth</option>
-                    <option value="02400000">Plympton</option>
-                    <option value="02410000">Princeton (non-op)</option>
-                    <option value="04870000">Prospect Hill Academy Charter (District)</option>
-                    <option value="02420000">Provincetown</option>
-                    <option value="07530000">Quabbin</option>
-                    <option value="07780000">Quaboag Regional</option>
-                    <option value="02430000">Quincy</option>
-                    <option value="07550000">Ralph C Mahar</option>
-                    <option value="02440000">Randolph</option>
-                    <option value="02450000">Raynham (non-op)</option>
-                    <option value="02460000">Reading</option>
-                    <option value="02470000">Rehoboth (non-op)</option>
-                    <option value="02480000">Revere</option>
-                    <option value="02490000">Richmond</option>
-                    <option value="04830000">Rising Tide Charter Public (District)</option>
-                    <option value="04820000">River Valley Charter (District)</option>
-                    <option value="02500000">Rochester</option>
-                    <option value="02510000">Rockland</option>
-                    <option value="02520000">Rockport</option>
-                    <option value="02530000">Rowe</option>
-                    <option value="02540000">Rowley (non-op)</option>
-                    <option value="04840000">Roxbury Preparatory Charter (District)</option>
-                    <option value="02550000">Royalston (non-op)</option>
-                    <option value="02560000">Russell (non-op)</option>
-                    <option value="02570000">Rutland (non-op)</option>
-                    <option value="02580000">Salem</option>
-                    <option value="04850000">Salem Academy Charter (District)</option>
-                    <option value="02590000">Salisbury (non-op)</option>
-                    <option value="02600000">Sandisfield (non-op)</option>
-                    <option value="02610000">Sandwich</option>
-                    <option value="02620000">Saugus</option>
-                    <option value="02630000">Savoy</option>
-                    <option value="02640000">Scituate</option>
-                    <option value="02650000">Seekonk</option>
-                    <option value="02660000">Sharon</option>
-                    <option value="08710000">Shawsheen Valley Regional Vocational Technical</option>
-                    <option value="02670000">Sheffield (non-op)</option>
-                    <option value="02680000">Shelburne (non-op)</option>
-                    <option value="02690000">Sherborn</option>
-                    <option value="02700000">Shirley (non-op)</option>
-                    <option value="02710000">Shrewsbury</option>
-                    <option value="02720000">Shutesbury</option>
-                    <option value="07600000">Silver Lake</option>
-                    <option value="04740000">Sizer School: A North Central Charter Essential (D...</option>
-                    <option value="02730000">Somerset</option>
-                    <option value="07630000">Somerset Berkley Regional School District</option>
-                    <option value="02740000">Somerville</option>
-                    <option value="02780000">South Hadley</option>
-                    <option value="08290000">South Middlesex Regional Vocational Technical</option>
-                    <option value="04880000">South Shore Charter Public (District)</option>
-                    <option value="08730000">South Shore Regional Vocational Technical</option>
-                    <option value="02750000">Southampton</option>
-                    <option value="02760000">Southborough</option>
-                    <option value="02770000">Southbridge</option>
-                    <option value="08720000">Southeastern Regional Vocational Technical</option>
-                    <option value="07650000">Southern Berkshire</option>
-                    <option value="08760000">Southern Worcester County Regional Vocational Scho...</option>
-                    <option value="03530000">Southfield (non-op)</option>
-                    <option value="02790000">Southwick (non-op)</option>
-                    <option value="07660000">Southwick-Tolland-Granville Regional School Distri...</option>
-                    <option value="02800000">Spencer (non-op)</option>
-                    <option value="07670000">Spencer-E Brookfield</option>
-                    <option value="02810000">Springfield</option>
-                    <option value="04410000">Springfield International Charter (District)</option>
-                    <option value="35100000">Springfield Preparatory Charter School (District)</option>
-                    <option value="02820000">Sterling (non-op)</option>
-                    <option value="02830000">Stockbridge (non-op)</option>
-                    <option value="02840000">Stoneham</option>
-                    <option value="02850000">Stoughton</option>
-                    <option value="02860000">Stow (non-op)</option>
-                    <option value="02870000">Sturbridge</option>
-                    <option value="04890000">Sturgis Charter Public (District)</option>
-                    <option value="02880000">Sudbury</option>
-                    <option value="02890000">Sunderland</option>
-                    <option value="02900000">Sutton</option>
-                    <option value="02910000">Swampscott</option>
-                    <option value="02920000">Swansea</option>
-                    <option value="39020000">TEC Connections Academy Commonwealth Virtual Schoo...</option>
-                    <option value="07700000">Tantasqua</option>
-                    <option value="02930000">Taunton</option>
-                    <option value="02940000">Templeton (non-op)</option>
-                    <option value="02950000">Tewksbury</option>
-                    <option value="02960000">Tisbury</option>
-                    <option value="02970000">Tolland (non-op)</option>
-                    <option value="02980000">Topsfield</option>
-                    <option value="02990000">Townsend (non-op)</option>
-                    <option value="08780000">Tri-County Regional Vocational Technical</option>
-                    <option value="07730000">Triton</option>
-                    <option value="03000000">Truro</option>
-                    <option value="03010000">Tyngsborough</option>
-                    <option value="03020000">Tyringham (non-op)</option>
-                    <option value="04800000">UP Academy Charter School of Boston (District)</option>
-                    <option value="35050000">UP Academy Charter School of Dorchester (District)</option>
-                    <option value="07740000">Up-Island Regional</option>
-                    <option value="08790000">Upper Cape Cod Regional Vocational Technical</option>
-                    <option value="03030000">Upton (non-op)</option>
-                    <option value="03040000">Uxbridge</option>
-                    <option value="04980000">Veritas Preparatory Charter School (District)</option>
-                    <option value="07750000">Wachusett</option>
-                    <option value="03050000">Wakefield</option>
-                    <option value="03060000">Wales</option>
-                    <option value="03070000">Walpole</option>
-                    <option value="03080000">Waltham</option>
-                    <option value="03090000">Ware</option>
-                    <option value="03100000">Wareham</option>
-                    <option value="03110000">Warren (non-op)</option>
-                    <option value="03120000">Warwick (non-op)</option>
-                    <option value="03130000">Washington (non-op)</option>
-                    <option value="03140000">Watertown</option>
-                    <option value="03150000">Wayland</option>
-                    <option value="03160000">Webster</option>
-                    <option value="03170000">Wellesley</option>
-                    <option value="03180000">Wellfleet</option>
-                    <option value="03190000">Wendell (non-op)</option>
-                    <option value="03200000">Wenham (non-op)</option>
-                    <option value="03220000">West Boylston</option>
-                    <option value="03230000">West Bridgewater</option>
-                    <option value="03240000">West Brookfield (non-op)</option>
-                    <option value="03290000">West Newbury (non-op)</option>
-                    <option value="03320000">West Springfield</option>
-                    <option value="03330000">West Stockbridge (non-op)</option>
-                    <option value="03340000">West Tisbury (non-op)</option>
-                    <option value="03210000">Westborough</option>
-                    <option value="03250000">Westfield</option>
-                    <option value="03260000">Westford</option>
-                    <option value="03270000">Westhampton</option>
-                    <option value="03280000">Westminster (non-op)</option>
-                    <option value="03300000">Weston</option>
-                    <option value="03310000">Westport</option>
-                    <option value="03350000">Westwood</option>
-                    <option value="03360000">Weymouth</option>
-                    <option value="03370000">Whately</option>
-                    <option value="03380000">Whitman (non-op)</option>
-                    <option value="07800000">Whitman-Hanson</option>
-                    <option value="08850000">Whittier Regional Vocational Technical</option>
-                    <option value="03390000">Wilbraham (non-op)</option>
-                    <option value="03400000">Williamsburg</option>
-                    <option value="03410000">Williamstown (non-op)</option>
-                    <option value="03420000">Wilmington</option>
-                    <option value="03430000">Winchendon</option>
-                    <option value="03440000">Winchester</option>
-                    <option value="03450000">Windsor (non-op)</option>
-                    <option value="03460000">Winthrop</option>
-                    <option value="03470000">Woburn</option>
-                    <option value="03480000">Worcester</option>
-                    <option value="03490000">Worthington</option>
-                    <option value="03500000">Wrentham</option>
-                    <option value="03510000">Yarmouth (non-op)</option>
-                </select><br></br>
-                <label for="format">Format: </label>
-                <select id="format" name="format"
-                    onchange="if (this.value == 'json'){document.getElementById('year-check').disabled = false;document.getElementById('year-check').checked = false;}else{document.getElementById('year-check').disabled = true}">
-                    <option value="html">Table (HTML)</option>
-                    <!-- <option value="csv">Table (CSV)</option> -->
-                    <option value="json">Raw JSON</option>
-                </select><br><br>
-                <input id="year-check" type="checkbox"
-                    onclick="document.getElementById('year').disabled = !this.checked;document.getElementById('statistic-check').disabled = !this.checked;document.getElementById('statistic-check').checked = false;document.getElementById('statistic').disabled = true;"
-                    disabled>
-                <label for="year">Year: </label>
-                <input id="year" type="number" name="year" value="2022" min="1994" max="2022" disabled /><br><br>
-                <input id="statistic-check" type="checkbox"
-                    onclick="document.getElementById('statistic').disabled = !this.checked" disabled>
-                <label for="statistic">Statistic: </label>
-                <select id="statistic" name="statistic" disabled>
-                    <optgroup label="Enrollment">
-                        <option value="Enrollment by Race/Ethnicity">Enrollment by Race/Ethnicity</option>
-                        <option value="Enrollment by Gender">Enrollment by Gender</option>
-                        <option value="Selected Populations">Selected Populations</option>
-                        <option value="Total">Total</option>
-                    </optgroup>
-                </select><br><br>
-                <label for="force-preserve">Do Not Update: </label>
-                <input id="force-preserve" name="force-preserve" type="checkbox"><br><br>
-                <input id="submit" type="submit" value="Submit" />
-            </form>
-        </article>
-        <article>
-            <h1>How it Works</h1>
-            <button onclick="window.location.href='../'">Back to the Analyzer</button>
-            <h2>URL Parameters</h1>
-                <code>code</code> - (string) This is the "orgcode" of the school district. It is an 8 digit integer.<br>
-                <code>format</code> - ("json" or "html") This is the format you want the results to be in. It can be
-                "json" or "html"".<br>
-                <ul>
-                    <li>"json": returns the raw JSON from the cach. It includes the years, demographics, and metadata.
-                    </li>
-                    <li>"html": returns an HTML table of values with the rows as years, and the columns as demographics.
-                        It
-                        also
-                        includes the metadata from the cache.</li>
-                </ul>
-                <code>year</code> - (string) This sets a specific year to look at. It only applies to JSON format.<br>
-                <code>statistic</code> - (string) This sets a specific statistic to look at ("Enrollment by
-                Race/Ethnicity",
-                "Enrollment
-                by Gender", "Selected Populations" or "Total"). It only applies to JSON format, if there is also a year
-                specified.<br>
-                <code>force-preserve</code> - ("on" or "off") This forces the server to not fetch new data from the
-                DOE.<br>
-                <code>force-update</code> - ("on" or "off") This forces the server to fetch new data from the DOE. If
-                both
-                <code>force-preserve</code> and <code>force-update</code> are "on", then the server will not update the
-                data<br>
-                <code>passcode</code> - (string) This is a passkey that the server requires for a forced update, if the
-                passkey
-                is not
-                present or incorrect, <code>force-update</code> will be ignored.<br>
-                <h2>JSON</h1>
-                    <pre style="padding: 10px 10px 10px 50px;">&#x251c; <code>2022</code>
-        &#x251c; <code>2021</code>
-        &#x251c; <code>2020</code>
-        &#x251c; ...
-        &#x2514; <code>metadata</code>
-            &#x251c; <code>updated</code>
-            &#x251c; <code>status</code>
-            &#x251c; <code>code</code>
-            &#x251c; <code>name</code>
-            &#x251c; <code>non-op</code>
-            &#x2514; <code>[updated-from]</code></pre>
-                    <code>{year}</code> - (object) This is the parent to all of the statistic objects, each of which has
-                    a
-                    hirearchy
-                    of <code>statistic &rarr; option &rarr; number</code> or <code>statistic &rarr; number</code><br>
-                    <code>metadata</code> - (object) This is the parent to all of the metadata<br>
-                    <code>updated</code> - (integer) This is the time (in milliseconds) that the current data was
-                    fetched<br>
-                    <code>status</code> - (string) This is what the server did to get current data ("updated",
-                    "forced-updated",
-                    "created", "normal" or "forced-normal")<br>
-                    <code>code</code> - (string) 8 digit org code of the school district<br>
-                    <code>name</code> - (string) This is the name of the district<br>
-                    <code>non-op</code> - (boolean) Whether the distric is "non-operating"<br>
-                    <code>updated-from</code> - (integer) This is the time (in milliseconds) that the previous data was
-                    from. It
-                    only exists when the <code>status</code> is "updated" or "forced-updated".<br>
-        </article>
-    </main>
+	<main>
+		<article>
+			<h1>School Diversity Analyzer</h1>
+			<form action="/data" method="get" id="form">
+				<label for="code">District: </label>
+				<select id="code" name="code">
+					<option value="04450000">Abby Kelley Foster Charter Public (District)</option>
+					<option value="00010000">Abington</option>
+					<option value="04120000">Academy Of the Pacific Rim Charter Public (Distric...</option>
+					<option value="00020000">Acton (non-op)</option>
+					<option value="06000000">Acton-Boxborough</option>
+					<option value="00030000">Acushnet</option>
+					<option value="00040000">Adams (non-op)</option>
+					<option value="04300000">Advanced Math and Science Academy Charter (Distric...</option>
+					<option value="00050000">Agawam</option>
+					<option value="00060000">Alford (non-op)</option>
+					<option value="04090000">Alma del Mar Charter School (District)</option>
+					<option value="00070000">Amesbury</option>
+					<option value="00080000">Amherst</option>
+					<option value="06050000">Amherst-Pelham</option>
+					<option value="00090000">Andover</option>
+					<option value="01040000">Aquinnah (non-op)</option>
+					<option value="35090000">Argosy Collegiate Charter School (District)</option>
+					<option value="00100000">Arlington</option>
+					<option value="00110000">Ashburnham (non-op)</option>
+					<option value="06100000">Ashburnham-Westminster</option>
+					<option value="00120000">Ashby (non-op)</option>
+					<option value="00130000">Ashfield (non-op)</option>
+					<option value="00140000">Ashland</option>
+					<option value="08010000">Assabet Valley Regional Vocational Technical</option>
+					<option value="00150000">Athol (non-op)</option>
+					<option value="06150000">Athol-Royalston</option>
+					<option value="04910000">Atlantis Charter (District)</option>
+					<option value="00160000">Attleboro</option>
+					<option value="00170000">Auburn</option>
+					<option value="00180000">Avon</option>
+					<option value="00190000">Ayer (non-op)</option>
+					<option value="06160000">Ayer Shirley School District</option>
+					<option value="00200000">Barnstable</option>
+					<option value="00210000">Barre (non-op)</option>
+					<option value="35020000">Baystate Academy Charter Public School (District)</option>
+					<option value="00220000">Becket (non-op)</option>
+					<option value="00230000">Bedford</option>
+					<option value="00240000">Belchertown</option>
+					<option value="00250000">Bellingham</option>
+					<option value="00260000">Belmont</option>
+					<option value="04200000">Benjamin Banneker Charter Public (District)</option>
+					<option value="04470000">Benjamin Franklin Classical Charter Public (Distri...</option>
+					<option value="00270000">Berkley</option>
+					<option value="04140000">Berkshire Arts and Technology Charter Public (Dist...</option>
+					<option value="06180000">Berkshire Hills</option>
+					<option value="00280000">Berlin (non-op)</option>
+					<option value="06200000">Berlin-Boylston</option>
+					<option value="00290000">Bernardston (non-op)</option>
+					<option value="00300000">Beverly</option>
+					<option value="00310000">Billerica</option>
+					<option value="00320000">Blackstone (non-op)</option>
+					<option value="08050000">Blackstone Valley Regional Vocational Technical</option>
+					<option value="06220000">Blackstone-Millville</option>
+					<option value="00330000">Blandford (non-op)</option>
+					<option value="08060000">Blue Hills Regional Vocational Technical</option>
+					<option value="00340000">Bolton (non-op)</option>
+					<option value="00350000">Boston</option>
+					<option value="04490000">Boston Collegiate Charter (District)</option>
+					<option value="04240000">Boston Day and Evening Academy Charter (District)</option>
+					<option value="04110000">Boston Green Academy Horace Mann Charter School (D...</option>
+					<option value="04160000">Boston Preparatory Charter Public (District)</option>
+					<option value="04810000">Boston Renaissance Charter Public (District)</option>
+					<option value="00360000">Bourne</option>
+					<option value="00370000">Boxborough (non-op)</option>
+					<option value="00380000">Boxford</option>
+					<option value="00390000">Boylston (non-op)</option>
+					<option value="00400000">Braintree</option>
+					<option value="00410000">Brewster</option>
+					<option value="04170000">Bridge Boston Charter School (District)</option>
+					<option value="00420000">Bridgewater (non-op)</option>
+					<option value="06250000">Bridgewater-Raynham</option>
+					<option value="00430000">Brimfield</option>
+					<option value="09100000">Bristol County Agricultural</option>
+					<option value="08100000">Bristol-Plymouth Regional Vocational Technical</option>
+					<option value="00440000">Brockton</option>
+					<option value="04280000">Brooke Charter School (District)</option>
+					<option value="00450000">Brookfield</option>
+					<option value="00460000">Brookline</option>
+					<option value="00470000">Buckland (non-op)</option>
+					<option value="00480000">Burlington</option>
+					<option value="00490000">Cambridge</option>
+					<option value="00500000">Canton</option>
+					<option value="04320000">Cape Cod Lighthouse Charter (District)</option>
+					<option value="08150000">Cape Cod Regional Vocational Technical</option>
+					<option value="00510000">Carlisle</option>
+					<option value="00520000">Carver</option>
+					<option value="06350000">Central Berkshire</option>
+					<option value="00530000">Charlemont (non-op)</option>
+					<option value="00540000">Charlton (non-op)</option>
+					<option value="00550000">Chatham (non-op)</option>
+					<option value="00560000">Chelmsford</option>
+					<option value="00570000">Chelsea</option>
+					<option value="00580000">Cheshire (non-op)</option>
+					<option value="00590000">Chester (non-op)</option>
+					<option value="00600000">Chesterfield (non-op)</option>
+					<option value="06320000">Chesterfield-Goshen</option>
+					<option value="00610000">Chicopee</option>
+					<option value="00620000">Chilmark (non-op)</option>
+					<option value="04180000">Christa McAuliffe Charter Public (District)</option>
+					<option value="04370000">City on a Hill Charter Public School (District)</option>
+					<option value="00630000">Clarksburg</option>
+					<option value="00640000">Clinton</option>
+					<option value="04380000">Codman Academy Charter Public (District)</option>
+					<option value="00650000">Cohasset</option>
+					<option value="35030000">Collegiate Charter School of Lowell (District)</option>
+					<option value="00660000">Colrain (non-op)</option>
+					<option value="04360000">Community Charter School of Cambridge (District)</option>
+					<option value="04260000">Community Day Charter Public School - Gateway (Dis...</option>
+					<option value="04400000">Community Day Charter Public School - Prospect (Di...</option>
+					<option value="04310000">Community Day Charter Public School - R. Kingman W...</option>
+					<option value="00670000">Concord</option>
+					<option value="06400000">Concord-Carlisle</option>
+					<option value="04390000">Conservatory Lab Charter (District)</option>
+					<option value="00680000">Conway</option>
+					<option value="00690000">Cummington (non-op)</option>
+					<option value="00700000">Dalton (non-op)</option>
+					<option value="00710000">Danvers</option>
+					<option value="00720000">Dartmouth</option>
+					<option value="00730000">Dedham</option>
+					<option value="00740000">Deerfield</option>
+					<option value="00750000">Dennis (non-op)</option>
+					<option value="06450000">Dennis-Yarmouth</option>
+					<option value="03520000">Devens (non-op)</option>
+					<option value="00760000">Dighton (non-op)</option>
+					<option value="06500000">Dighton-Rehoboth</option>
+					<option value="00770000">Douglas</option>
+					<option value="00780000">Dover</option>
+					<option value="06550000">Dover-Sherborn</option>
+					<option value="00790000">Dracut</option>
+					<option value="00800000">Dudley (non-op)</option>
+					<option value="04070000">Dudley Street Neighborhood Charter School (Distric...</option>
+					<option value="06580000">Dudley-Charlton Reg</option>
+					<option value="00810000">Dunstable (non-op)</option>
+					<option value="00820000">Duxbury</option>
+					<option value="00830000">East Bridgewater</option>
+					<option value="00840000">East Brookfield (non-op)</option>
+					<option value="00870000">East Longmeadow</option>
+					<option value="00850000">Eastham</option>
+					<option value="00860000">Easthampton</option>
+					<option value="00880000">Easton</option>
+					<option value="00890000">Edgartown</option>
+					<option value="04520000">Edward M. Kennedy Academy for Health Careers (Hora...</option>
+					<option value="00900000">Egremont (non-op)</option>
+					<option value="00910000">Erving</option>
+					<option value="00920000">Essex (non-op)</option>
+					<option value="08170000">Essex North Shore Agricultural and Technical Schoo...</option>
+					<option value="00930000">Everett</option>
+					<option value="04100000">Excel Academy Charter (District)</option>
+					<option value="00940000">Fairhaven</option>
+					<option value="00950000">Fall River</option>
+					<option value="00960000">Falmouth</option>
+					<option value="06620000">Farmington River Reg</option>
+					<option value="00970000">Fitchburg</option>
+					<option value="00980000">Florida</option>
+					<option value="04130000">Four Rivers Charter Public (District)</option>
+					<option value="00990000">Foxborough</option>
+					<option value="04460000">Foxborough Regional Charter (District)</option>
+					<option value="01000000">Framingham</option>
+					<option value="04780000">Francis W. Parker Charter Essential (District)</option>
+					<option value="01010000">Franklin</option>
+					<option value="08180000">Franklin County Regional Vocational Technical</option>
+					<option value="01020000">Freetown (non-op)</option>
+					<option value="06650000">Freetown-Lakeville</option>
+					<option value="06700000">Frontier</option>
+					<option value="01030000">Gardner</option>
+					<option value="06720000">Gateway</option>
+					<option value="01050000">Georgetown</option>
+					<option value="01060000">Gill (non-op)</option>
+					<option value="06740000">Gill-Montague</option>
+					<option value="04960000">Global Learning Charter Public (District)</option>
+					<option value="01070000">Gloucester</option>
+					<option value="01080000">Goshen (non-op)</option>
+					<option value="01090000">Gosnold</option>
+					<option value="01100000">Grafton</option>
+					<option value="01110000">Granby</option>
+					<option value="01120000">Granville (non-op)</option>
+					<option value="01130000">Great Barrington (non-op)</option>
+					<option value="39010000">Greater Commonwealth Virtual District</option>
+					<option value="08210000">Greater Fall River Regional Vocational Technical</option>
+					<option value="08230000">Greater Lawrence Regional Vocational Technical</option>
+					<option value="08280000">Greater Lowell Regional Vocational Technical</option>
+					<option value="08250000">Greater New Bedford Regional Vocational Technical</option>
+					<option value="01140000">Greenfield</option>
+					<option value="01150000">Groton (non-op)</option>
+					<option value="06730000">Groton-Dunstable</option>
+					<option value="01160000">Groveland (non-op)</option>
+					<option value="01170000">Hadley</option>
+					<option value="01180000">Halifax</option>
+					<option value="01190000">Hamilton (non-op)</option>
+					<option value="06750000">Hamilton-Wenham</option>
+					<option value="01200000">Hampden (non-op)</option>
+					<option value="04990000">Hampden Charter School of Science East (District)</option>
+					<option value="35160000">Hampden Charter School of Science West (District)</option>
+					<option value="06800000">Hampden-Wilbraham</option>
+					<option value="06830000">Hampshire</option>
+					<option value="01210000">Hancock</option>
+					<option value="01220000">Hanover</option>
+					<option value="01230000">Hanson (non-op)</option>
+					<option value="01240000">Hardwick (non-op)</option>
+					<option value="01250000">Harvard</option>
+					<option value="01260000">Harwich (non-op)</option>
+					<option value="01270000">Hatfield</option>
+					<option value="01280000">Haverhill</option>
+					<option value="06850000">Hawlemont</option>
+					<option value="01290000">Hawley (non-op)</option>
+					<option value="01300000">Heath (non-op)</option>
+					<option value="04190000">Helen Y. Davis Leadership Academy Charter Public (...</option>
+					<option value="04550000">Hill View Montessori Charter Public (District)</option>
+					<option value="04500000">Hilltown Cooperative Charter Public (District)</option>
+					<option value="01310000">Hingham</option>
+					<option value="01320000">Hinsdale (non-op)</option>
+					<option value="01330000">Holbrook</option>
+					<option value="01340000">Holden (non-op)</option>
+					<option value="01350000">Holland</option>
+					<option value="01360000">Holliston</option>
+					<option value="01370000">Holyoke</option>
+					<option value="04530000">Holyoke Community Charter (District)</option>
+					<option value="06030000">Hoosac Valley Regional</option>
+					<option value="01380000">Hopedale</option>
+					<option value="01390000">Hopkinton</option>
+					<option value="01400000">Hubbardston (non-op)</option>
+					<option value="01410000">Hudson</option>
+					<option value="01420000">Hull</option>
+					<option value="01430000">Huntington (non-op)</option>
+					<option value="04350000">Innovation Academy Charter (District)</option>
+					<option value="03700000">Institutional Schools</option>
+					<option value="01440000">Ipswich</option>
+					<option value="04630000">KIPP Academy Boston Charter School (District)</option>
+					<option value="04290000">KIPP Academy Lynn Charter (District)</option>
+					<option value="06900000">King Philip</option>
+					<option value="01450000">Kingston</option>
+					<option value="01460000">Lakeville (non-op)</option>
+					<option value="01470000">Lancaster (non-op)</option>
+					<option value="01480000">Lanesborough (non-op)</option>
+					<option value="01490000">Lawrence</option>
+					<option value="04540000">Lawrence Family Development Charter (District)</option>
+					<option value="04860000">Learning First Charter Public School (District)</option>
+					<option value="01500000">Lee</option>
+					<option value="01510000">Leicester</option>
+					<option value="01520000">Lenox</option>
+					<option value="01530000">Leominster</option>
+					<option value="01540000">Leverett</option>
+					<option value="01550000">Lexington</option>
+					<option value="01560000">Leyden (non-op)</option>
+					<option value="35140000">Libertas Academy Charter School (District)</option>
+					<option value="01570000">Lincoln</option>
+					<option value="06950000">Lincoln-Sudbury</option>
+					<option value="01580000">Littleton</option>
+					<option value="01590000">Longmeadow</option>
+					<option value="01600000">Lowell</option>
+					<option value="04560000">Lowell Community Charter Public (District)</option>
+					<option value="04580000">Lowell Middlesex Academy Charter (District)</option>
+					<option value="01610000">Ludlow</option>
+					<option value="01620000">Lunenburg</option>
+					<option value="01630000">Lynn</option>
+					<option value="01640000">Lynnfield</option>
+					<option value="04690000">MATCH Charter Public School (District)</option>
+					<option value="04680000">Ma Academy for Math and Science</option>
+					<option value="01650000">Malden</option>
+					<option value="01660000">Manchester (non-op)</option>
+					<option value="06980000">Manchester Essex Regional</option>
+					<option value="01670000">Mansfield</option>
+					<option value="35170000">Map Academy Charter School (District)</option>
+					<option value="01680000">Marblehead</option>
+					<option value="04640000">Marblehead Community Charter Public (District)</option>
+					<option value="01690000">Marion</option>
+					<option value="01700000">Marlborough</option>
+					<option value="01710000">Marshfield</option>
+					<option value="07000000">Martha's Vineyard</option>
+					<option value="04660000">Martha's Vineyard Charter (District)</option>
+					<option value="04920000">Martin Luther King Jr. Charter School of Excellenc...</option>
+					<option value="07050000">Masconomet</option>
+					<option value="01720000">Mashpee</option>
+					<option value="01730000">Mattapoisett</option>
+					<option value="01740000">Maynard</option>
+					<option value="01750000">Medfield</option>
+					<option value="01760000">Medford</option>
+					<option value="01770000">Medway</option>
+					<option value="01780000">Melrose</option>
+					<option value="01790000">Mendon (non-op)</option>
+					<option value="07100000">Mendon-Upton</option>
+					<option value="01800000">Merrimac (non-op)</option>
+					<option value="01810000">Methuen</option>
+					<option value="01820000">Middleborough</option>
+					<option value="01830000">Middlefield (non-op)</option>
+					<option value="01840000">Middleton</option>
+					<option value="01850000">Milford</option>
+					<option value="01860000">Millbury</option>
+					<option value="01870000">Millis</option>
+					<option value="01880000">Millville (non-op)</option>
+					<option value="01890000">Milton</option>
+					<option value="08300000">Minuteman Regional Vocational Technical</option>
+					<option value="07170000">Mohawk Trail</option>
+					<option value="07120000">Monomoy Regional School District</option>
+					<option value="01900000">Monroe (non-op)</option>
+					<option value="01910000">Monson</option>
+					<option value="08320000">Montachusett Regional Vocational Technical</option>
+					<option value="01920000">Montague (non-op)</option>
+					<option value="01930000">Monterey (non-op)</option>
+					<option value="01940000">Montgomery (non-op)</option>
+					<option value="07150000">Mount Greylock</option>
+					<option value="01950000">Mount Washington (non-op)</option>
+					<option value="04700000">Mystic Valley Regional Charter (District)</option>
+					<option value="01960000">Nahant</option>
+					<option value="01970000">Nantucket</option>
+					<option value="07200000">Narragansett</option>
+					<option value="07250000">Nashoba</option>
+					<option value="08520000">Nashoba Valley Regional Vocational Technical</option>
+					<option value="01980000">Natick</option>
+					<option value="06600000">Nauset</option>
+					<option value="01990000">Needham</option>
+					<option value="04440000">Neighborhood House Charter (District)</option>
+					<option value="02000000">New Ashford (non-op)</option>
+					<option value="02010000">New Bedford</option>
+					<option value="02020000">New Braintree (non-op)</option>
+					<option value="35130000">New Heights Charter School of Brockton (District)</option>
+					<option value="02050000">New Marlborough (non-op)</option>
+					<option value="02060000">New Salem (non-op)</option>
+					<option value="07280000">New Salem-Wendell</option>
+					<option value="02030000">Newbury (non-op)</option>
+					<option value="02040000">Newburyport</option>
+					<option value="02070000">Newton</option>
+					<option value="02080000">Norfolk</option>
+					<option value="09150000">Norfolk County Agricultural</option>
+					<option value="02090000">North Adams</option>
+					<option value="02110000">North Andover</option>
+					<option value="02120000">North Attleborough</option>
+					<option value="02150000">North Brookfield</option>
+					<option value="07350000">North Middlesex</option>
+					<option value="02170000">North Reading</option>
+					<option value="02100000">Northampton</option>
+					<option value="04060000">Northampton-Smith Vocational Agricultural</option>
+					<option value="07300000">Northboro-Southboro</option>
+					<option value="02130000">Northborough</option>
+					<option value="02140000">Northbridge</option>
+					<option value="08530000">Northeast Metropolitan Regional Vocational Technic...</option>
+					<option value="08510000">Northern Berkshire Regional Vocational Technical</option>
+					<option value="02160000">Northfield (non-op)</option>
+					<option value="02180000">Norton</option>
+					<option value="02190000">Norwell</option>
+					<option value="02200000">Norwood</option>
+					<option value="02210000">Oak Bluffs</option>
+					<option value="02220000">Oakham (non-op)</option>
+					<option value="08550000">Old Colony Regional Vocational Technical</option>
+					<option value="07400000">Old Rochester</option>
+					<option value="35150000">Old Sturbridge Academy Charter Public School (Dist...</option>
+					<option value="02230000">Orange</option>
+					<option value="02240000">Orleans</option>
+					<option value="02250000">Otis (non-op)</option>
+					<option value="02260000">Oxford</option>
+					<option value="02270000">Palmer</option>
+					<option value="08600000">Pathfinder Regional Vocational Technical</option>
+					<option value="35010000">Paulo Freire Social Justice Charter School (Distri...</option>
+					<option value="02280000">Paxton (non-op)</option>
+					<option value="02290000">Peabody</option>
+					<option value="02300000">Pelham</option>
+					<option value="02310000">Pembroke</option>
+					<option value="07450000">Pentucket</option>
+					<option value="02320000">Pepperell (non-op)</option>
+					<option value="02330000">Peru (non-op)</option>
+					<option value="02340000">Petersham</option>
+					<option value="02350000">Phillipston (non-op)</option>
+					<option value="35180000">Phoenix Academy Public Charter High School Lawrenc...</option>
+					<option value="35080000">Phoenix Academy Public Charter High School Springf...</option>
+					<option value="04930000">Phoenix Charter Academy (District)</option>
+					<option value="04940000">Pioneer Charter School of Science (District)</option>
+					<option value="35060000">Pioneer Charter School of Science II (PCSS-II) (Di...</option>
+					<option value="07500000">Pioneer Valley</option>
+					<option value="04970000">Pioneer Valley Chinese Immersion Charter (District...</option>
+					<option value="04790000">Pioneer Valley Performing Arts Charter Public (Dis...</option>
+					<option value="02360000">Pittsfield</option>
+					<option value="02370000">Plainfield (non-op)</option>
+					<option value="02380000">Plainville</option>
+					<option value="02390000">Plymouth</option>
+					<option value="02400000">Plympton</option>
+					<option value="02410000">Princeton (non-op)</option>
+					<option value="04870000">Prospect Hill Academy Charter (District)</option>
+					<option value="02420000">Provincetown</option>
+					<option value="07530000">Quabbin</option>
+					<option value="07780000">Quaboag Regional</option>
+					<option value="02430000">Quincy</option>
+					<option value="07550000">Ralph C Mahar</option>
+					<option value="02440000">Randolph</option>
+					<option value="02450000">Raynham (non-op)</option>
+					<option value="02460000">Reading</option>
+					<option value="02470000">Rehoboth (non-op)</option>
+					<option value="02480000">Revere</option>
+					<option value="02490000">Richmond</option>
+					<option value="04830000">Rising Tide Charter Public (District)</option>
+					<option value="04820000">River Valley Charter (District)</option>
+					<option value="02500000">Rochester</option>
+					<option value="02510000">Rockland</option>
+					<option value="02520000">Rockport</option>
+					<option value="02530000">Rowe</option>
+					<option value="02540000">Rowley (non-op)</option>
+					<option value="04840000">Roxbury Preparatory Charter (District)</option>
+					<option value="02550000">Royalston (non-op)</option>
+					<option value="02560000">Russell (non-op)</option>
+					<option value="02570000">Rutland (non-op)</option>
+					<option value="02580000">Salem</option>
+					<option value="04850000">Salem Academy Charter (District)</option>
+					<option value="02590000">Salisbury (non-op)</option>
+					<option value="02600000">Sandisfield (non-op)</option>
+					<option value="02610000">Sandwich</option>
+					<option value="02620000">Saugus</option>
+					<option value="02630000">Savoy</option>
+					<option value="02640000">Scituate</option>
+					<option value="02650000">Seekonk</option>
+					<option value="02660000">Sharon</option>
+					<option value="08710000">Shawsheen Valley Regional Vocational Technical</option>
+					<option value="02670000">Sheffield (non-op)</option>
+					<option value="02680000">Shelburne (non-op)</option>
+					<option value="02690000">Sherborn</option>
+					<option value="02700000">Shirley (non-op)</option>
+					<option value="02710000">Shrewsbury</option>
+					<option value="02720000">Shutesbury</option>
+					<option value="07600000">Silver Lake</option>
+					<option value="04740000">Sizer School: A North Central Charter Essential (D...</option>
+					<option value="02730000">Somerset</option>
+					<option value="07630000">Somerset Berkley Regional School District</option>
+					<option value="02740000">Somerville</option>
+					<option value="02780000">South Hadley</option>
+					<option value="08290000">South Middlesex Regional Vocational Technical</option>
+					<option value="04880000">South Shore Charter Public (District)</option>
+					<option value="08730000">South Shore Regional Vocational Technical</option>
+					<option value="02750000">Southampton</option>
+					<option value="02760000">Southborough</option>
+					<option value="02770000">Southbridge</option>
+					<option value="08720000">Southeastern Regional Vocational Technical</option>
+					<option value="07650000">Southern Berkshire</option>
+					<option value="08760000">Southern Worcester County Regional Vocational Scho...</option>
+					<option value="03530000">Southfield (non-op)</option>
+					<option value="02790000">Southwick (non-op)</option>
+					<option value="07660000">Southwick-Tolland-Granville Regional School Distri...</option>
+					<option value="02800000">Spencer (non-op)</option>
+					<option value="07670000">Spencer-E Brookfield</option>
+					<option value="02810000">Springfield</option>
+					<option value="04410000">Springfield International Charter (District)</option>
+					<option value="35100000">Springfield Preparatory Charter School (District)</option>
+					<option value="02820000">Sterling (non-op)</option>
+					<option value="02830000">Stockbridge (non-op)</option>
+					<option value="02840000">Stoneham</option>
+					<option value="02850000">Stoughton</option>
+					<option value="02860000">Stow (non-op)</option>
+					<option value="02870000">Sturbridge</option>
+					<option value="04890000">Sturgis Charter Public (District)</option>
+					<option value="02880000">Sudbury</option>
+					<option value="02890000">Sunderland</option>
+					<option value="02900000">Sutton</option>
+					<option value="02910000">Swampscott</option>
+					<option value="02920000">Swansea</option>
+					<option value="39020000">TEC Connections Academy Commonwealth Virtual Schoo...</option>
+					<option value="07700000">Tantasqua</option>
+					<option value="02930000">Taunton</option>
+					<option value="02940000">Templeton (non-op)</option>
+					<option value="02950000">Tewksbury</option>
+					<option value="02960000">Tisbury</option>
+					<option value="02970000">Tolland (non-op)</option>
+					<option value="02980000">Topsfield</option>
+					<option value="02990000">Townsend (non-op)</option>
+					<option value="08780000">Tri-County Regional Vocational Technical</option>
+					<option value="07730000">Triton</option>
+					<option value="03000000">Truro</option>
+					<option value="03010000">Tyngsborough</option>
+					<option value="03020000">Tyringham (non-op)</option>
+					<option value="04800000">UP Academy Charter School of Boston (District)</option>
+					<option value="35050000">UP Academy Charter School of Dorchester (District)</option>
+					<option value="07740000">Up-Island Regional</option>
+					<option value="08790000">Upper Cape Cod Regional Vocational Technical</option>
+					<option value="03030000">Upton (non-op)</option>
+					<option value="03040000">Uxbridge</option>
+					<option value="04980000">Veritas Preparatory Charter School (District)</option>
+					<option value="07750000">Wachusett</option>
+					<option value="03050000">Wakefield</option>
+					<option value="03060000">Wales</option>
+					<option value="03070000">Walpole</option>
+					<option value="03080000">Waltham</option>
+					<option value="03090000">Ware</option>
+					<option value="03100000">Wareham</option>
+					<option value="03110000">Warren (non-op)</option>
+					<option value="03120000">Warwick (non-op)</option>
+					<option value="03130000">Washington (non-op)</option>
+					<option value="03140000">Watertown</option>
+					<option value="03150000">Wayland</option>
+					<option value="03160000">Webster</option>
+					<option value="03170000">Wellesley</option>
+					<option value="03180000">Wellfleet</option>
+					<option value="03190000">Wendell (non-op)</option>
+					<option value="03200000">Wenham (non-op)</option>
+					<option value="03220000">West Boylston</option>
+					<option value="03230000">West Bridgewater</option>
+					<option value="03240000">West Brookfield (non-op)</option>
+					<option value="03290000">West Newbury (non-op)</option>
+					<option value="03320000">West Springfield</option>
+					<option value="03330000">West Stockbridge (non-op)</option>
+					<option value="03340000">West Tisbury (non-op)</option>
+					<option value="03210000">Westborough</option>
+					<option value="03250000">Westfield</option>
+					<option value="03260000">Westford</option>
+					<option value="03270000">Westhampton</option>
+					<option value="03280000">Westminster (non-op)</option>
+					<option value="03300000">Weston</option>
+					<option value="03310000">Westport</option>
+					<option value="03350000">Westwood</option>
+					<option value="03360000">Weymouth</option>
+					<option value="03370000">Whately</option>
+					<option value="03380000">Whitman (non-op)</option>
+					<option value="07800000">Whitman-Hanson</option>
+					<option value="08850000">Whittier Regional Vocational Technical</option>
+					<option value="03390000">Wilbraham (non-op)</option>
+					<option value="03400000">Williamsburg</option>
+					<option value="03410000">Williamstown (non-op)</option>
+					<option value="03420000">Wilmington</option>
+					<option value="03430000">Winchendon</option>
+					<option value="03440000">Winchester</option>
+					<option value="03450000">Windsor (non-op)</option>
+					<option value="03460000">Winthrop</option>
+					<option value="03470000">Woburn</option>
+					<option value="03480000">Worcester</option>
+					<option value="03490000">Worthington</option>
+					<option value="03500000">Wrentham</option>
+					<option value="03510000">Yarmouth (non-op)</option>
+				</select><br></br>
+				<label for="format">Format: </label>
+				<select id="format" name="format"
+					onchange="if (this.value == 'json'){document.getElementById('year-check').disabled = false;document.getElementById('year-check').checked = false;}else{document.getElementById('year-check').disabled = true}">
+					<option value="html">Table (HTML)</option>
+					<!-- <option value="csv">Table (CSV)</option> -->
+					<option value="json">Raw JSON</option>
+				</select><br><br>
+				<input id="year-check" type="checkbox"
+					onclick="document.getElementById('year').disabled = !this.checked;document.getElementById('statistic-check').disabled = !this.checked;document.getElementById('statistic-check').checked = false;document.getElementById('statistic').disabled = true;"
+					disabled>
+				<label for="year">Year: </label>
+				<input id="year" type="number" name="year" value="2022" min="1994" max="2022" disabled /><br><br>
+				<input id="statistic-check" type="checkbox"
+					onclick="document.getElementById('statistic').disabled = !this.checked" disabled>
+				<label for="statistic">Statistic: </label>
+				<select id="statistic" name="statistic" disabled>
+					<optgroup label="Enrollment">
+						<option value="Enrollment by Race/Ethnicity">Enrollment by Race/Ethnicity</option>
+						<option value="Enrollment by Gender">Enrollment by Gender</option>
+						<option value="Selected Populations">Selected Populations</option>
+						<option value="Total">Total</option>
+					</optgroup>
+				</select><br><br>
+				<label for="force-preserve">Do Not Update: </label>
+				<input id="force-preserve" name="force-preserve" type="checkbox"><br><br>
+				<input id="submit" type="submit" value="Submit" />
+			</form>
+		</article>
+		<article>
+			<h1>How it Works</h1>
+			<button onclick="window.location.href='../'">Back to the Analyzer</button>
+			<h2>URL Parameters</h1>
+				<code>code</code> - (string) This is the "orgcode" of the school district. It is an 8 digit integer.<br>
+				<code>format</code> - ("json" or "html") This is the format you want the results to be in. It can be
+				"json" or "html"".<br>
+				<ul>
+					<li>"json": returns the raw JSON from the cach. It includes the years, demographics, and metadata.
+					</li>
+					<li>"html": returns an HTML table of values with the rows as years, and the columns as demographics.
+						It
+						also
+						includes the metadata from the cache.</li>
+				</ul>
+				<code>year</code> - (string) This sets a specific year to look at. It only applies to JSON format.<br>
+				<code>statistic</code> - (string) This sets a specific statistic to look at ("Enrollment by
+				Race/Ethnicity",
+				"Enrollment
+				by Gender", "Selected Populations" or "Total"). It only applies to JSON format, if there is also a year
+				specified.<br>
+				<code>force-preserve</code> - ("on" or "off") This forces the server to not fetch new data from the
+				DOE.<br>
+				<code>force-update</code> - ("on" or "off") This forces the server to fetch new data from the DOE. If
+				both
+				<code>force-preserve</code> and <code>force-update</code> are "on", then the server will not update the
+				data<br>
+				<code>passcode</code> - (string) This is a passkey that the server requires for a forced update, if the
+				passkey
+				is not
+				present or incorrect, <code>force-update</code> will be ignored.<br>
+				<h2>JSON</h1>
+					<pre style="padding: 10px 10px 10px 50px;">&#x251c; <code>2022</code>
+&#x251c; <code>2021</code>
+&#x251c; <code>2020</code>
+&#x251c; ...
+&#x2514; <code>metadata</code>
+    &#x251c; <code>updated</code>
+    &#x251c; <code>status</code>
+    &#x251c; <code>code</code>
+    &#x251c; <code>name</code>
+    &#x251c; <code>non-op</code>
+    &#x2514; <code>[updated-from]</code></pre>
+					<code>{year}</code> - (object) This is the parent to all of the statistic objects, each of which has
+					a
+					hirearchy
+					of <code>statistic &rarr; option &rarr; number</code> or <code>statistic &rarr; number</code><br>
+					<code>metadata</code> - (object) This is the parent to all of the metadata<br>
+					<code>updated</code> - (integer) This is the time (in milliseconds) that the current data was
+					fetched<br>
+					<code>status</code> - (string) This is what the server did to get current data ("updated",
+					"forced-updated",
+					"created", "normal" or "forced-normal")<br>
+					<code>code</code> - (string) 8 digit org code of the school district<br>
+					<code>name</code> - (string) This is the name of the district<br>
+					<code>non-op</code> - (boolean) Whether the distric is "non-operating"<br>
+					<code>updated-from</code> - (integer) This is the time (in milliseconds) that the previous data was
+					from. It
+					only exists when the <code>status</code> is "updated" or "forced-updated".<br>
+		</article>
+	</main>
 </body>
 
 </html>

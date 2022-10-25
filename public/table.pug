@@ -1,0 +1,50 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width")
+		link(href="//alexsol.is/style.css", rel="stylesheet", type="text/css")
+		link(rel="stylesheet", href="style.css")
+		title Diversity Data for #{results.metadata.name}
+	body
+		header
+			h1.header AlexSol
+				span.orange .is
+			nav
+				a(href="../") Back to Form
+		main
+			article.grid
+				span Status: #{results.metadata.status}
+				span Data From: #{new Date(results.metadata.updated).toUTCString()}
+				span District: #{results.metadata.name}
+				span District Code: #{results.metadata.code}
+				span Non-op? #{results.metadata["non-op"] ? "Yes" : "No"}
+			table
+				thead
+					tr
+						th
+						each val, key in columns
+							th(colspan=val.length) #{key}
+					tr
+						th Year
+						each val, key in columns
+							each item in val
+								th #{item}
+				tbody
+					each row of rows
+						tr
+							td #{row}
+							each val, key in columns
+								each item in val
+									unless results[row][key] == "No Data"
+										unless key == "Total"
+											if results[row][key][item] + 1
+												td #{results[row][key][item]}
+											else
+												td.empty No Data
+									else
+										td.empty No Data
+							if results[row]["Total"]
+								td #{results[row]["Total"]}
+							else
+								td.empty No Data

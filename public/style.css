@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box
+}
+
+header {
+	align-items: center;
+}
+
+table {
+	min-width: 100%
+}
+
+.grid {
+	column-gap: 50px;
+}
+
+table,
+tr,
+td,
+th {
+	border: 3px solid black;
+	border-collapse: collapse;
+	background-color: #fff
+}
+
+tr:nth-child(even) td {
+	background-color: #ddd
+}
+
+td,
+th {
+	padding: 5px;
+	text-align: center
+}
+
+.empty {
+	font-size: 10px;
+	background-image:
+		linear-gradient(to bottom right,
+			transparent 0%,
+			transparent calc(50% - 1px),
+			var(--accent) 50%,
+			transparent calc(50% + 1px),
+			transparent 100%),
+
+		linear-gradient(to top right,
+			transparent 0%,
+			transparent calc(50% - 1px),
+			var(--accent) 50%,
+			transparent calc(50% + 1px),
+			transparent 100%);
+}
+
+thead th {
+	background: var(--accent)
+}
