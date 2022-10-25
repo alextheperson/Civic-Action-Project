@@ -7,13 +7,9 @@ html
 		link(rel="stylesheet", href="style.css")
 		title Diversity Data for #{results.metadata.name}
 	body
-		header
-			h1.header AlexSol
-				span.orange .is
-			nav
-				a(href="../") Back to Form
 		main
 			article.grid
+				a(href="../") Back to Form
 				span Status: #{results.metadata.status}
 				span Data From: #{new Date(results.metadata.updated).toUTCString()}
 				span District: #{results.metadata.name}
