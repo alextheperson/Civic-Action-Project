@@ -1,19 +1,19 @@
 const express = require('express');
 const fs = require('fs');
-const url = require('url');
 const scraper = require('./scraper.js');
 const codes = require('./school-districts.js');
 const util = require('./util.js');
+const path = require('path');
 
 const app = express();
-
 const PORT = process.env.PORT || 3000;
-
-// https://civic-action-project.alextheperson.repl.co/json/?code=04450000&year=2022&statistic=Enrollment%20by%20Race/Ethnicity
-
 app.use(express.static('public'));
 
 const router = express.Router();
+
+router.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'));
+});
 
 router.get('/data/', (req, res) => {
   let urlParams = new URL(
