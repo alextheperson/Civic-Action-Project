@@ -30,7 +30,7 @@ router.get('/data/', (req, res) => {
         urlParams.get('force-preserve') == 'on'
       ) {
         data['metadata']['status'] =
-          urlParams.get('force-preserve') == 'on' ? 'forced-normal' : 'normal';
+          urlParams.get('force-preserve') == 'on' ? 'forced-cached' : 'cached';
         if (urlParams.get('format') == 'html') {
           res.send(util.toTable(data));
         } else if (urlParams.get('format') == 'json') {

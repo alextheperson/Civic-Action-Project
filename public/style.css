@@ -1,56 +1,88 @@
 * {
-	box-sizing: border-box
+  box-sizing: border-box;
+  --accent: #e3954b;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #d7d7d7;
+}
+
+input,
+select {
+  accent-color: var(--accent);
 }
 
 header {
-	align-items: center;
+  align-items: center;
 }
 
 table {
-	min-width: 100%
+  min-width: 100%;
 }
 
 .grid {
-	column-gap: 50px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 table,
 tr,
 td,
 th {
-	border: 3px solid black;
-	border-collapse: collapse;
-	background-color: #fff
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: #fff;
 }
 
 tr:nth-child(even) td {
-	background-color: #ddd
+  background-color: #ddd;
 }
 
 td,
 th {
-	padding: 5px;
-	text-align: center
+  padding: 5px;
+  text-align: center;
 }
 
 .empty {
-	font-size: 10px;
-	background-image:
-		linear-gradient(to bottom right,
-			transparent 0%,
-			transparent calc(50% - 1px),
-			var(--accent) 50%,
-			transparent calc(50% + 1px),
-			transparent 100%),
-
-		linear-gradient(to top right,
-			transparent 0%,
-			transparent calc(50% - 1px),
-			var(--accent) 50%,
-			transparent calc(50% + 1px),
-			transparent 100%);
+  font-size: 10px;
+  background-image: linear-gradient(
+      to bottom right,
+      transparent 0%,
+      transparent calc(50% - 1px),
+      var(--accent) 50%,
+      transparent calc(50% + 1px),
+      transparent 100%
+    ),
+    linear-gradient(
+      to top right,
+      transparent 0%,
+      transparent calc(50% - 1px),
+      var(--accent) 50%,
+      transparent calc(50% + 1px),
+      transparent 100%
+    );
 }
 
 thead th {
-	background: var(--accent)
+  background: var(--accent);
+}
+
+#form {
+  border: 2px solid var(--accent);
+  width: fit-content;
+  padding: 20px;
+}
+
+code {
+  background: #ccc;
+  padding: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-weight: normal;
 }
