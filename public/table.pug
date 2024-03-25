@@ -3,12 +3,12 @@ html
 	head
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width")
-		link(rel="stylesheet", href="../style.css")
+		link(rel="stylesheet", href="style.css")
 		title Diversity Data for #{results.metadata.name}
 	body
 		main
 			article.grid
-				a(href="../") Back to Form
+				a(href=".") Back to Form
 				span Status: #{results.metadata.status}
 				span Data From: #{new Date(results.metadata.updated).toUTCString()}
 				span District: #{results.metadata.name}
