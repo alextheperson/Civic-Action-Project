@@ -57,7 +57,7 @@ router.get('/data/', (req, res) => {
             fs.writeFile(
               'cache/' + urlParams.get('code') + '.json',
               JSON.stringify(newdata),
-              () => {}
+              () => { }
             );
             newdata['metadata']['status'] = 'updated';
             newdata['metadata']['updated-from'] = data['metadata']['updated'];
@@ -82,11 +82,11 @@ router.get('/data/', (req, res) => {
         );
       }
     } else {
-      scraper.scrapeEnrollment(urlParams.get('code'), 1994, 2022, (newdata) => {
+      scraper.scrapeEnrollment(urlParams.get('code'), 1994, 2024, (newdata) => {
         fs.writeFile(
           'cache/' + urlParams.get('code') + '.json',
           JSON.stringify(newdata),
-          () => {}
+          () => { }
         );
         newdata['metadata']['status'] = 'created';
         if (urlParams.get('format') == 'html') {
@@ -116,27 +116,27 @@ app.use(process.env.BASE_URL ?? '/', router);
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
 
 function scrape(index) {
-  scraper.scrapeEnrollment(codes.codes[index], 1994, 2022, (newdata) => {
+  scraper.scrapeEnrollment(codes.codes[index], 1994, 2024, (newdata) => {
     console.log(
       'finished compiling data for district #' +
-        (index + 1) +
-        ' out of ' +
-        codes.codes.length +
-        '. Orgcode: ' +
-        newdata['metadata']['code'] +
-        '. Name: ' +
-        newdata['metadata']['name'] +
-        '. Non-op: ' +
-        newdata['metadata']['non-op'] +
-        '. Put in file: ' +
-        'cache/' +
-        newdata['metadata']['code'] +
-        '.json.'
+      (index + 1) +
+      ' out of ' +
+      codes.codes.length +
+      '. Orgcode: ' +
+      newdata['metadata']['code'] +
+      '. Name: ' +
+      newdata['metadata']['name'] +
+      '. Non-op: ' +
+      newdata['metadata']['non-op'] +
+      '. Put in file: ' +
+      'cache/' +
+      newdata['metadata']['code'] +
+      '.json.'
     );
     fs.writeFile(
       'cache/' + newdata['metadata']['code'] + '.json',
       JSON.stringify(newdata),
-      () => {}
+      () => { }
     );
     if (index < codes.codes.length - 1) {
       scrape((index += 1));
