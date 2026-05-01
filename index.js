@@ -82,7 +82,7 @@ router.get('/data/', (req, res) => {
         );
       }
     } else {
-      scraper.scrapeEnrollment(urlParams.get('code'), 1994, 2024, (newdata) => {
+      scraper.scrapeEnrollment(urlParams.get('code'), 1994, 2025, (newdata) => {
         fs.writeFile(
           'cache/' + urlParams.get('code') + '.json',
           JSON.stringify(newdata),
@@ -116,7 +116,7 @@ app.use(process.env.BASE_URL ?? '/', router);
 app.listen(PORT, () => console.log(`Server is running on PORT ${PORT}`));
 
 function scrape(index) {
-  scraper.scrapeEnrollment(codes.codes[index], 1994, 2024, (newdata) => {
+  scraper.scrapeEnrollment(codes.codes[index], 1994, 2025, (newdata) => {
     console.log(
       'finished compiling data for district #' +
       (index + 1) +
