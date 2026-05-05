@@ -549,7 +549,7 @@
           onclick="document.getElementById('year').disabled = !this.checked;document.getElementById('statistic-check').disabled = !this.checked;document.getElementById('statistic-check').checked = false;document.getElementById('statistic').disabled = true;"
           disabled>
         <label for="year">Year: </label>
-        <input id="year" type="number" name="year" value="2024" min="1994" max="2024" disabled /><br><br>
+        <input id="year" type="number" name="year" value="2024" min="1994" max="2025" disabled /><br><br>
         <input id="statistic-check" type="checkbox"
           onclick="document.getElementById('statistic').disabled = !this.checked" disabled>
         <label for="statistic">Statistic: </label>
@@ -598,16 +598,16 @@
         present or incorrect, <code>force-update</code> will be ignored.<br>
         <h2>JSON</h1>
           <pre style="padding: 10px 10px 10px 50px;">&#x251c; <code>2022</code>
-            &#x251c; <code>2021</code>
-            &#x251c; <code>2020</code>
-            &#x251c; ...
-            &#x2514; <code>metadata</code>
-            &#x251c; <code>updated</code>
-            &#x251c; <code>status</code>
-            &#x251c; <code>code</code>
-            &#x251c; <code>name</code>
-            &#x251c; <code>non-op</code>
-            &#x2514; <code>[updated-from]</code></pre>
+&#x251c; <code>2021</code>
+&#x251c; <code>2020</code>
+&#x251c; ...
+&#x2514; <code>metadata</code>
+&#x251c; <code>updated</code>
+&#x251c; <code>status</code>
+&#x251c; <code>code</code>
+&#x251c; <code>name</code>
+&#x251c; <code>non-op</code>
+&#x2514; <code>[updated-from]</code></pre>
           <code>{year}</code> - (object) This is the parent to all of the statistic objects, each of which has
           a
           hirearchy
